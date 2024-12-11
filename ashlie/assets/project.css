@@ -1,0 +1,101 @@
+/* General Styling */
+
+
+/* Navbar Styling */
+nav {
+    
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    background: rgba(236, 141, 16, 0.5);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ffffff00;
+}
+
+nav ul li a.active {
+    background: #007bff00;
+    color: #fff;
+}
+
+/* Project Section */
+.project {
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.project h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.project h5 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #000;
+}
+
+.project img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    border: 8px solid #ff7b00;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #494444;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project {
+        width: 100%;
+    }
+
+    .project h1 {
+        font-size: 2em;
+    }
+
+    
+    .project img {
+        max-width: 800px;
+    }
+}

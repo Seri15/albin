@@ -1,0 +1,352 @@
+body {
+    background-image: url("images/bg464.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ensure the height scales dynamically */
+    height: auto; /* Allow auto height for content to grow */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* Navigation Bar */
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background 0.3s ease, color 0.3s ease;
+    /* Removed border-radius for square effect */
+}
+
+.navbar ul li a:hover {
+    background: #ffffff00;  /* White background on hover */
+          /* Change text color to black */
+    /* No border-radius for square effect */
+}
+
+.navbar ul li a.active {
+    background: #007bff00;
+    color: #fff;
+    /* No border-radius for square effect */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 10%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0); /* Transparent layer for text visibility */
+    border-radius: 10px;
+}
+
+/* Text Container */
+.text-container {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.text-container h1 {
+    font-size: 4.5em;
+    font-weight: bold;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+
+.text-container h1 span {
+    color: #00aaff;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    margin: 20px 0 30px;
+    color: #f1f1f1;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00aaff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0088cc;
+    transform: scale(1.05);
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.image-container img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 8px solid #00aaff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+/* Main Content */
+.container {
+    padding-top: 100px;
+    width: 80%;
+}
+
+.content-section {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.content-section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.content-section p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* Contact Form Section */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Success and Error Messages */
+.success-message {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success-message.error {
+    background-color: #dc3545;
+}
+
+/* Form Styling */
+.form {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Archivo', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #007bff;
+    background-color: #444;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: 'Archivo', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+}
+
+.project-container::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.project a.cta-button {
+    position: relative;
+    z-index: 1;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    .text-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 300px;
+        height: 300px;
+    }
+}
+

@@ -1,0 +1,393 @@
+/* General Styling */
+body {
+    background-image: url("../images/bg464.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ensure the height scales dynamically */
+    height: auto; /* Allow auto height for content to grow */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: #ffffff00; /* Transparent hover background */
+    color: #ffffff; /* Text remains white */
+}
+
+.navbar ul li a.active {
+    background: #007bff00; /* Transparent active state */
+    color: #fff;
+}
+
+/* Main Content */
+.container {
+    padding-top: 100px;
+    width: 80%;
+}
+
+.content-section {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.content-section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.content-section p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* Contact Form Section */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Reduced gap for cleaner layout */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px; /* Slightly reduced padding */
+    gap: 40px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    margin: 30px auto; /* Reduced margin for more compact appearance */
+    max-width: 900px; /* Adjusted max-width for better centering */
+    color: #fff;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px; /* Adjusted minimum width */
+    max-width: 350px; /* Set max-width to ensure proportionality */
+    padding: 15px; /* Reduced padding */
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    font-size: 1em; /* Uniform font size */
+}
+
+.contact-info h2 {
+    font-size: 1.5em; /* Slightly smaller heading size */
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.form {
+    flex: 1;
+    min-width: 350px;
+    max-width: 100%; /* Ensures the form doesn't exceed the container */
+    padding: 30px; /* Adds spacing inside the form container */
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+}
+
+.form-group {
+    margin-bottom: 15px; /* Reduced margin for compactness */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-group input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px; /* Larger padding for better appearance */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px; /* Adjusted height for better spacing */
+}
+
+input[type="file"] {
+    background-color: #444; /* Darker background for file input */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #0056b3;
+}
+
+.form-group input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid #007bff;
+    background-color: #444;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px; /* Adjusted button padding */
+    font-size: 1em; /* Consistent font size */
+    font-family: 'Archivo', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 15px; /* Slight spacing for clarity */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+/* Success and Error Messages */
+.success-message {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success-message.error {
+    background-color: #dc3545;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+}
+
+.project-container::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.project a.cta-button {
+    position: relative;
+    z-index: 1;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Form Row Styling */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between fields */
+    justify-content: space-between;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    background: rgba(0, 0, 0, 0); /* Matches the dark box background */
+    padding: 40px 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%; /* Center and control width */
+}
+
+.skills-section .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-box {
+    background: rgba(0, 0, 0, 0.85); /* Matches the inner box background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.skills-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.skills-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item {
+    font-size: 16px;
+    margin: 5px 0;
+    padding-left: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.skill-item:before {
+    content: "•";
+    color: #007bff; /* Accent color for the bullet point */
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap for smaller screens */
+        padding: 20px;
+    }
+
+    .contact-info {
+        text-align: center;
+        padding: 10px; /* Reduced padding */
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
+}
