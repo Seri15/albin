@@ -49,7 +49,7 @@ if (file_exists($dataFile)) {
 <div class="navbar">
         <ul>
             <li><a href="index.php" class="active">HOME</a></li>
-            <li><a href="about.php">ABOUT ME</a></li>
+            <li><a href="About.php">ABOUT ME</a></li>
             <li><a href="change_profile.php" class="active">CHANGE PROFILE</a></li>
             <li><a href="My portfolio.php">MY PORTFOLIO</a></li>
             <li><a href="skills.php">SKILLS</a></li>
