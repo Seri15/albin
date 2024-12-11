@@ -12,7 +12,7 @@
     <div class="navbar">
         <ul>
             <li><a href="/index.html">HOME</a></li>
-            <li><a href="About.php">ABOUT ME</a></li>
+            <li><a href="about.php">ABOUT ME</a></li>
             <li><a href="skills.php">SKILLS</a></li>
             <li><a href="index2.php">CONTACT ME</a></li>
         </ul>
