@@ -1,0 +1,200 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #1a73e8, #a4508b);
+    background-image: url('https://cdn.wallpapersafari.com/72/45/5HaqRE.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    height: 100vh;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent header */
+}
+
+header h1, header p {
+    margin: 0;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Call-to-Action Buttons */
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background: #ff3b28;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.0);
+    color: #333333;
+}
+
+.contact-form h2 {
+    color: #333333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0f5bbd;
+}
+
+.contact-form .error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.contact-form .success {
+    color: green;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.projects .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.projects .box {
+    background-color: #1d1d38;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.projects .box:hover {
+    transform: translateY(-10px);
+}
+
+.projects .box .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.projects .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects .box .content {
+    padding: 20px;
+}
+
+.projects .box .content h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #8ea603;
+}
+
+.projects .box .content p {
+    font-size: .7rem;
+    color: #f2d968;
+    line-height: 1.6;
+}
